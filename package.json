@@ -1,0 +1,11 @@
+{
+  "name": "dribbble-card-design-02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass/ -o dist/css/ --recursive"
+  },
+  "author": "Saad Saif",
+  "license": "ISC"
+}
