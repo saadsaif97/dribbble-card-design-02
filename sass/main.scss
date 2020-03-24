@@ -1,0 +1,163 @@
+$bg-color: #f0f0fc;
+$blue: #4643d3;
+$orange: #f47500;
+$gray-l1: #a8a4dd;
+$gray-l2: #e5e4f9;
+$red: #df5d51;
+$yellow: #ffc000;
+$gray-d1: #1e1e1e;
+$gray-d2: #a5a5a5;
+
+// basic styling
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: $bg-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+// utilities
+
+.font-thin{
+    font-weight: 100;
+}
+
+.font-l1{
+    color: #fff;
+}
+
+.font-l2{
+    color: $gray-l1;
+}
+
+.font-d1{
+    color: $gray-d1;
+}
+
+.font-d2{
+    color: $gray-d2;
+}
+
+// main styling
+.container{
+    overflow: hidden;
+    margin: 50px 0;
+    width: 320px;
+    height: 692px;
+    background-color: #fff;
+    padding: 36px 25px 0 25px;
+    border-radius: 40px;
+
+    .icons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        i{
+            color: $blue;
+            font-size: 1.6rem;
+        }
+
+        .burger-menu{
+            
+            .line{
+                background-color: $blue;
+                height: 3px;
+            }
+
+            .line-1{
+                width: 18px;
+            }
+
+            .line-2{
+                margin-top: 3px;
+                margin-left: 9px;
+                width: 9px;
+            }
+        }
+    }
+
+    .my-cards{
+        margin: 26px 0;
+        text-align: center;
+
+        .cards{
+            margin-top: 22px;
+            display: flex;
+            flex-wrap: nowrap;
+            position: relative;
+
+            .add{
+                position: absolute;
+                margin-right: 12px;
+                height: 62px;
+                width: 58px;
+                border-radius: 20px;
+                background-color: $gray-l2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i{
+                    font-size: 1.6rem;
+                    color: $gray-l1;
+                }
+            }
+            
+            .card:not(:last-child){
+                margin-right: 12px;
+            }
+
+            .card{
+                position: relative;
+                left: 70px;
+                width: 20rem;
+                height: 12.5rem;
+                border-radius: 18px;
+                padding: 15px;
+                background-image: url(../img/card.jpg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center center;
+                background-position: top right;
+
+                .number-and-circles{
+                    display: flex;
+                    justify-content: space-between;
+
+                    .number{
+                        font-size: 1rem;
+                        color: #fff;
+                    }
+
+                    .circles{
+                        display: flex;
+                        .circle{
+                            width: 2rem;
+                            height: 2rem;
+                            border-radius: 50%;
+                            background-color: #fff;
+                            border: 3px solid $orange;
+                        }
+                        .circle2{
+                            margin-left: -10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

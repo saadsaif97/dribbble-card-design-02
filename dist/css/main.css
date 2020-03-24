@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #f0f0fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif; }
+
+.font-thin {
+  font-weight: 100; }
+
+.font-l1 {
+  color: #fff; }
+
+.font-l2 {
+  color: #a8a4dd; }
+
+.font-d1 {
+  color: #1e1e1e; }
+
+.font-d2 {
+  color: #a5a5a5; }
+
+.container {
+  overflow: hidden;
+  margin: 50px 0;
+  width: 320px;
+  height: 692px;
+  background-color: #fff;
+  padding: 36px 25px 0 25px;
+  border-radius: 40px; }
+  .container .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .container .icons i {
+      color: #4643d3;
+      font-size: 1.6rem; }
+    .container .icons .burger-menu .line {
+      background-color: #4643d3;
+      height: 3px; }
+    .container .icons .burger-menu .line-1 {
+      width: 18px; }
+    .container .icons .burger-menu .line-2 {
+      margin-top: 3px;
+      margin-left: 9px;
+      width: 9px; }
+  .container .my-cards {
+    margin: 26px 0;
+    text-align: center; }
+    .container .my-cards .cards {
+      margin-top: 22px;
+      display: flex;
+      flex-wrap: nowrap;
+      position: relative; }
+      .container .my-cards .cards .add {
+        position: absolute;
+        margin-right: 12px;
+        height: 62px;
+        width: 58px;
+        border-radius: 20px;
+        background-color: #e5e4f9;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .container .my-cards .cards .add i {
+          font-size: 1.6rem;
+          color: #a8a4dd; }
+      .container .my-cards .cards .card:not(:last-child) {
+        margin-right: 12px; }
+      .container .my-cards .cards .card {
+        position: relative;
+        left: 70px;
+        width: 20rem;
+        height: 12.5rem;
+        border-radius: 18px;
+        padding: 15px;
+        background-image: url(../img/card.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        background-position: top right; }
+        .container .my-cards .cards .card .number-and-circles {
+          display: flex;
+          justify-content: space-between; }
+          .container .my-cards .cards .card .number-and-circles .number {
+            font-size: 1rem;
+            color: #fff; }
+          .container .my-cards .cards .card .number-and-circles .circles {
+            display: flex; }
+            .container .my-cards .cards .card .number-and-circles .circles .circle {
+              width: 2rem;
+              height: 2rem;
+              border-radius: 50%;
+              background-color: #fff;
+              border: 3px solid #f47500; }
+            .container .my-cards .cards .card .number-and-circles .circles .circle2 {
+              margin-left: -10px; }
